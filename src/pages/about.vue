@@ -23,8 +23,8 @@
     <div class="bg-backg container pt-[95px] mb-[128px] px-5 md:px-0">
       <div class="md:flex md:mx-[90px] md:mb-[95px] mb-[40px] gap-[61px]">
         <div>
-          <p class="font-semibold text-[38px] leading-[56px] font-[Poppins]">Goal focussed</p>
-          <p class="font-normal text-[16px] leading-[28px] mt-4">
+          <p class="font-semibold text-[25px] md:text-[38px] leading-[56px] font-[Poppins]">Goal focussed</p>
+          <p class="font-normal text-[16px] leading-[28px] md:mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -32,9 +32,9 @@
           </p>
         </div>
 
-        <div class="mt-10">
-            <p class="font-semibold text-[38px] leading-[56px] font-[Poppins]">Continuous improvement</p>
-            <p class="font-normal text-[16px] leading-[28px] mt-4">
+        <div class="mt-10 md:mt-0">
+            <p class="font-semibold text-[25px] md:text-[38px] leading-[56px] font-[Poppins]">Continuous improvement</p>
+            <p class="font-normal text-[16px] leading-[28px] md:mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

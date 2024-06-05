@@ -1,9 +1,9 @@
 <template>
   <!-- start header -->
-  <header class="bg-tint_blue pt-[200px] pb-[128px]">
+  <header class="bg-tint_blue pt-[150px] md:pt-[200px] pb-[128px]">
     <div class="container md:flex md:gap-[60px] px-5 md:px-0">
       <div class="text-white md:pr-[40px]">
-        <h1 class="font-semibold text-[54px] leading-[74px]">
+        <h1 class="font-semibold md:text-[54px] text-[30px] md:leading-[74px]">
           Building stellar websites for early startups
         </h1>
         <p class="font-medium text-[16px] leading-[28px] mt-[24px]">
