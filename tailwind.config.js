@@ -16,6 +16,7 @@ export default {
       our_project: "#282938",
       our_hover: "#12155cad",
       features: "#F4F6FC",
+      backg: "#F4F5F5",
     },
   },
   plugins: [],

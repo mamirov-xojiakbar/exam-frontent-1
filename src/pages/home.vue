@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="flex w-[90%] pt-10 justify-end">
-        <img src="../../public/Illustration.svg" alt="" class="" />
+        <img src="../../public/Illustration.svg" alt="" class="w-full "/>
       </div>
     </div>
   </header>
@@ -55,7 +55,7 @@
 
       <div class="grid grid-cols-3 gap-4 pt-10">
         <div class="overflow-hidden group relative col-span-2 mb-[64px]">
-          <img src="../../public/Card.png" alt="" />
+          <img src="../../public/Card.png" alt="" class="w-full h-full"/>
           <div
             class="w-[47%] absolute -left-full group-hover:left-0 duration-500 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end pb-20"
           >
