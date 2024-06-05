@@ -43,7 +43,7 @@
 
     <button
       :class="
-        id != 0
+        id == clientsComment.length-1
           ? 'p-3 rounded-[50%] bg-white text-black'  
           : 'p-3 rounded-[50%] bg-[#5239FA] text-white'  
       "
@@ -83,6 +83,12 @@ const clientsComment = [
   {
     text: '"Biz hozirgacha ishlagan eng yaxshi agentlik. Ular bizning mahsulotimizni tushunishadi va katta etibor bilan yangi xususiyatlarni qoshishga qodir."',
     fullName: "Abdulloh aka",
+    position: "Vice President",
+    image: "abdulloh2.png",
+  },
+  {
+    text: '"Biz hozirgacha ishlagan eng yaxshi agentlik. Ular bizning mahsulotimizni tushunishadi va katta etibor bilan yangi xususiyatlarni qoshishga qodir."',
+    fullName: "Abu",
     position: "Vice President",
     image: "abdulloh2.png",
   },
