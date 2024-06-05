@@ -1,7 +1,7 @@
 <template>
   <!-- start header -->
   <header class="bg-tint_blue pt-[200px] pb-[128px]">
-    <div class="container flex gap-[60px]">
+    <div class="container md:flex md:gap-[60px] px-10 md:px-0">
       <div class="text-white pr-[40px]">
         <h1 class="font-semibold text-[54px] leading-[74px]">
           Building stellar websites for early startups
@@ -11,7 +11,7 @@
           eiusmod tempor incididunt.
         </p>
 
-        <div class="flex mt-[48px] items-center gap-[40px]">
+        <div class="md:flex mt-[48px] items-center gap-[40px] hidden">
           <button
             class="bg-header_button font-semibold text-[18px] leading-[32px] px-[56px] py-[16px] rounded-[41px] text-black"
           >
@@ -22,18 +22,30 @@
           /></a>
         </div>
       </div>
-      <div class="flex w-[90%] pt-10 justify-end">
+
+      <div class="md:flex md:w-full pt-10 md:justify-end">
         <img src="../../public/Illustration.svg" alt="" class="w-full "/>
+
+        <div class="flex mt-[48px] items-center gap-[40px] md:hidden">
+          <button
+            class="bg-header_button font-semibold text-[18px] leading-[32px] px-[56px] py-[16px] rounded-[41px] text-black"
+          >
+            View our work
+          </button>
+          <a href="#" class="flex items-center gap-[14px] text-white"
+            >View Pricing <img src="../../public/Arrow.png" alt=""
+          /></a>
+        </div>
       </div>
     </div>
   </header>
   <!-- end header -->
 
   <!-- start our project -->
-  <section class="mt-[57px] container">
-    <div class="my-10">
+  <section class="mt-[57px] md:container px-5 md:px-0">
+    <div class="md:my-10">
       <div class="flex justify-between items-center">
-        <h2 class="text-our_project text-[48px] font-semibold">
+        <h2 class="text-our_project text-[30px] md:text-[48px] font-semibold">
           View our projects
         </h2>
         <button class="flex items-center text-our_project">
@@ -53,18 +65,18 @@
         </button>
       </div>
 
-      <div class="grid grid-cols-3 gap-4 pt-10">
-        <div class="overflow-hidden group relative col-span-2 mb-[64px]">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-4 pt-10 mb-[100px]">
+        <div class="overflow-hidden group relative md:col-span-2 md:mb-[64px]">
           <img src="../../public/Card.png" alt="" class="w-full h-full"/>
           <div
             class="w-[47%] absolute -left-full group-hover:left-0 duration-500 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end pb-20"
           >
             <div class="">
-              <h2 class="text-[26px] font-bold leading-[36px] text-white mx-11">
+              <h2 class="md:text-[26px] text-[17px] font-medium md:font-bold md:leading-[36px] text-white mx-11">
                 Workhub office Webflow Webflow Design
               </h2>
               <p
-                class="text-[18px] font-bold leading-[28px] mt-5 text-white mx-11"
+                class="md:text-[18px] md:font-bold ms:leading-[28px] mt-5 text-white mx-11 text-[12px]"
               >
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
@@ -91,7 +103,7 @@
         </div>
 
         <div>
-          <div class="relative ml-2 overflow-hidden group mb-[32px]">
+          <div class="relative ml-2 overflow-hidden group mb-[37px]">
             <img class="w-[100%]" src="../../public/Card3.png" alt="" />
             <div
               class="w-[100%] absolute -left-full duration-500 group-hover:left-0 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end p-10"
@@ -150,20 +162,21 @@
 
   <!-- start features -->
   <section class="bg-features">
-    <div class="container pt-[128px] pb-[128px]">
+    <div class="container pt-[128px] pb-[128px] px-5 md:px-0">
       <p class="text-center font-medium text-[16px] leading-[28px]">Features</p>
       <div class="w-full flex justify-center mt-[12px]">
         <p
-          class="text-center font-semibold text-[48px] leading-[64px] w-[45%] font-[Poppins]"
+          class="text-center font-semibold text-[20px] md:text-[48px] md:leading-[64px] w-[45%] font-[Poppins]"
         >
           Design that solves problems, one product at a time
         </p>
       </div>
-      <div class="grid grid-cols-3 grid-rows-2 mt-[47px] gap-[32px]">
+      
+      <div class="grid md:grid-cols-3 grid-rows-2 mt-[47px] gap-[32px]">
         <div
           v-for="(item, index) in column"
           :key="index"
-          class="bg-white p-[48px] text-our_project"
+          class="bg-white p-[48px] text-our_project hover:shadow-xl"
         >
           <img :src="item.img" alt="" class="mb-[25px]" />
           <p class="font-normal text-[24px] leading-9 font-[Poppins] mb-3">
@@ -178,12 +191,12 @@
 
   <!-- start clients -->
   <div class="bg-[#F4F6FC]"> 
-      <div class="container flex"> 
-        <div class="w-1/4"> 
-          <h2 class="leading-[56px] text-[40px] text-[#282938] font-semibold"> 
+      <div class="container md:flex px-5 md:px-0"> 
+        <div class="md:w-1/4"> 
+          <h2 class="leading-[56px] text-center text-[30px] md:text-[40px] text-[#282938] font-semibold md:text-start"> 
             What our clients say about us 
           </h2> 
-          <p class="leading-[28px] text-[#282938] pt-6"> 
+          <p class="leading-[28px] text-[#282938] md:pt-6 text-center md:text-start mb-10"> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed. 
           </p> 
         </div> 

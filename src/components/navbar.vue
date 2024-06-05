@@ -80,7 +80,7 @@ onUnmounted(() => {
 
     <div
       id="hamMenu"
-      class="container max-md:py-5 max-md:px-[5%] text-white flex md:py-[1%] w-full justify-between items-center"
+      class="container max-md:py-5 max-md:px-[5%] text-white flex md:py-[1%] w-full justify-between items-center "
     >
       <router-link to="/"
         ><img class="w-[80%]" src="../../public/Logo.png" alt="LOGO"
@@ -89,7 +89,7 @@ onUnmounted(() => {
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
-          class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
+          class="hidden md:block font-medium text-[16px] text-navbar_text [&.router-link-active]:text-white"
           v-for="(item, index) in menu"
           :key="index"
           >{{ item }}</router-link>
@@ -123,6 +123,7 @@ onUnmounted(() => {
               />
             </svg>
           </button>
+
           <button
             id="left"
             @click="hamburger()"
@@ -171,14 +172,14 @@ onUnmounted(() => {
 <style scoped>
 .blurred-background {
   background: rgba(28, 30, 83, 0.5);
-  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 }
 
 @media (max-width: 768px) {
   .blurred-background {
     background: rgba(28, 30, 83, 0.5);
-    backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+    backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px);
   }
 }

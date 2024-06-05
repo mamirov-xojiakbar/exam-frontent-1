@@ -1,9 +1,9 @@
 <template>
   <header class="">
     <div
-      class="pb-[126px] pt-[220px] flex container justify-between items-center"
+      class="md:pb-[126px] pb-[60px] md:pt-[220px] pt-[150px] md:flex container md:justify-between items-center px-5 md:px-0"
     >
-      <div class="w-[38%]">
+      <div class="md:w-[38%]">
         <p class="font-normal text-[18px] leading-[32px] mb-2">About us</p>
         <p class="font-semibold text-[54px] leading-[74px] font-[Poppins]">
           Our designs solve problems
@@ -15,13 +15,13 @@
         </p>
       </div>
 
-      <div class="pl-5 w-[640px]">
+      <div class="md:pl-5 md:w-[640px] w-full mt-10 md:mt-0">
         <img src="../../public/about1.png" alt="" />
       </div>
     </div>
 
-    <div class="bg-backg container pt-[95px] mb-[128px]">
-      <div class="flex mx-[90px] mb-[95px] gap-[61px]">
+    <div class="bg-backg container pt-[95px] mb-[128px] px-5 md:px-0">
+      <div class="md:flex md:mx-[90px] md:mb-[95px] mb-[40px] gap-[61px]">
         <div>
           <p class="font-semibold text-[38px] leading-[56px] font-[Poppins]">Goal focussed</p>
           <p class="font-normal text-[16px] leading-[28px] mt-4">
@@ -32,7 +32,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="mt-10">
             <p class="font-semibold text-[38px] leading-[56px] font-[Poppins]">Continuous improvement</p>
             <p class="font-normal text-[16px] leading-[28px] mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -48,12 +48,13 @@
 
   <div class="flex justify-center bg-features">
     <div class="container max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue">
-        <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-8">
+      <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-8">
         Meet our team
-        </h2>
-        <div class="md:flex mt-12 w-full justify-between">
-        <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
-            <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center">
+      </h2>
+
+      <div class="md:flex mt-12 w-full justify-between">
+        <div class="py-12 md:px-16 group" v-for="(item, index) in images" :key="index">
+          <div class="relative overflow-hidden rounded-full max-md:flex max-md:justify-center">
             <img class="rounded-full max-md:w-full" :src="item" alt="" />
             <img
                 class="top-full max-md:w-full duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
@@ -71,13 +72,13 @@
                 ><img :src="item_logo" alt="" class="w-full" />
                 </a>
             </div>
-            </div>
-            <h6 class="mt-[30px] text-center text-2xl font-medium">
-            {{ names[index] }}
-            </h6>
-            <p class="mt-1 text-center">{{ fields[index] }}</p>
+          </div>
+          <h6 class="mt-[30px] text-center text-2xl font-medium">
+          {{ names[index] }}
+          </h6>
+          <p class="mt-1 text-center">{{ fields[index] }}</p>
         </div>
-        </div>
+      </div>
     </div>
   </div>
 </template>
