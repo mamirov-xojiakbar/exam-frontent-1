@@ -1,8 +1,8 @@
 <template>
   <!-- start header -->
   <header class="bg-tint_blue pt-[200px] pb-[128px]">
-    <div class="container md:flex md:gap-[60px] px-10 md:px-0">
-      <div class="text-white pr-[40px]">
+    <div class="container md:flex md:gap-[60px] px-5 md:px-0">
+      <div class="text-white md:pr-[40px]">
         <h1 class="font-semibold text-[54px] leading-[74px]">
           Building stellar websites for early startups
         </h1>
@@ -28,7 +28,7 @@
 
         <div class="flex mt-[48px] items-center gap-[40px] md:hidden">
           <button
-            class="bg-header_button font-semibold text-[18px] leading-[32px] px-[56px] py-[16px] rounded-[41px] text-black"
+            class="bg-header_button font-semibold text-[18px] leading-[32px] px-[30px] md:px-[56px] py-[16px] rounded-[41px] text-black"
           >
             View our work
           </button>
