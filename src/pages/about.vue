@@ -5,7 +5,7 @@
     >
       <div class="md:w-[38%]">
         <p class="font-normal text-[18px] leading-[32px] mb-2">About us</p>
-        <p class="font-semibold text-[54px] leading-[74px] font-[Poppins]">
+        <p class="font-semibold text-[25px] md:text-[54px] md:leading-[74px] font-[Poppins]">
           Our designs solve problems
         </p>
         <p class="font-normal text-[16px] leading-[28px] mt-[31px]">

@@ -166,7 +166,7 @@
       <p class="text-center font-medium text-[16px] leading-[28px]">Features</p>
       <div class="w-full flex justify-center mt-[12px]">
         <p
-          class="text-center font-semibold text-[20px] md:text-[48px] md:leading-[64px] w-[45%] font-[Poppins]"
+          class="text-center font-semibold text-[20px] md:text-[48px] md:leading-[64px] md:w-[45%] font-[Poppins]"
         >
           Design that solves problems, one product at a time
         </p>
