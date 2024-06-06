@@ -13,6 +13,11 @@ const router = createRouter({
       name: "about",
       component: () => import("../pages/about.vue"),
     },
+    {
+      path: "/pricing",
+      name: "pricing",
+      component: () => import("../pages/pricing.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

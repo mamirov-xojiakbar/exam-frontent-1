@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="bg-header_button md:w-[40%] flex gap-[30px] py-[16px] px-[37px] mt-12">
+        <div class="bg-header_button md:w-[40%] flex gap-[30px] py-[16px] md:px-[37px] px-3 mt-12">
           <div>
               <p class="font-medium text-[18px] leading-[32px]">Email me at</p>
               <p class="font-normal text-[16px] leading-[24px]">contact@website.com</p>

@@ -96,7 +96,7 @@ onUnmounted(() => {
 
         <router-link
           :to="link(5)"
-          class="vibrate-button border-white/20 hidden md:block hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer"
+          class="border-white/20 hidden md:block hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer"
         >
           Contact us
         </router-link>

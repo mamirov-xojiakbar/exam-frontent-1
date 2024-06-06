@@ -45,7 +45,7 @@
   <section class="mt-[57px] md:container px-5 md:px-0">
     <div class="md:my-10">
       <div class="flex justify-between items-center">
-        <h2 class="text-our_project text-[30px] md:text-[48px] font-semibold">
+        <h2 class="text-our_project text-[17px] md:text-[48px] font-semibold">
           View our projects
         </h2>
         <button class="flex items-center text-our_project">
