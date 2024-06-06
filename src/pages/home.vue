@@ -12,14 +12,14 @@
         </p>
 
         <div class="md:flex mt-[48px] items-center gap-[40px] hidden">
-          <button
+          <router-link to="/work"
             class="bg-header_button font-semibold text-[18px] leading-[32px] px-[56px] py-[16px] rounded-[41px] text-black"
           >
             View our work
-          </button>
-          <a href="#" class="flex items-center gap-[14px]"
+          </router-link>
+          <router-link to="/pricing" class="flex items-center gap-[14px]"
             >View Pricing <img src="../../public/Arrow.png" alt=""
-          /></a>
+          /></router-link>
         </div>
       </div>
 
@@ -27,14 +27,14 @@
         <img src="../../public/Illustration.svg" alt="" class="w-full "/>
 
         <div class="flex mt-[48px] items-center gap-[40px] md:hidden">
-          <button
+          <router-link to="/work"
             class="bg-header_button font-semibold text-[18px] leading-[32px] px-[30px] md:px-[56px] py-[16px] rounded-[41px] text-black"
           >
             View our work
-          </button>
-          <a href="#" class="flex items-center gap-[14px] text-white"
+          </router-link>
+          <router-link to="/pricing" class="flex items-center gap-[14px] text-white"
             >View Pricing <img src="../../public/Arrow.png" alt=""
-          /></a>
+          /></router-link>
         </div>
       </div>
     </div>

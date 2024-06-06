@@ -92,7 +92,7 @@ const fields = ref(["CEO", "CTO", "Design Lead", "Project Manager"]);
 
 const logo = ref(["/facebook.svg", "/twitter.svg", "/linkdIn.svg"]);
 const getLink = (index) => {
-  if (index === 0) {
+  if (index === 0)     {
     return "https://facebook.com";
   } else if (index === 1) {
     return "https://twitter.com";
