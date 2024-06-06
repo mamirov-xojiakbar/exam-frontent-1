@@ -96,7 +96,7 @@ onUnmounted(() => {
 
         <router-link
           :to="link(5)"
-          class="border-white/20 hidden md:block hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer"
+          class="border-white/20 text-navbar_text hidden md:block [&.router-link-active]:border-white hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer [&.router-link-active]:text-white"
         >
           Contact us
         </router-link>
@@ -160,7 +160,7 @@ onUnmounted(() => {
     <router-link
       @click="hamburger()"
       :to="link(index)"
-      class="md:block hover-underline-animation phone font-medium text-xl py-1 first:pt-3"
+      class="md:block hover-underline-animation  font-medium text-xl py-1 first:pt-3"
       v-for="(item, index) in menu_hambur"
       :key="index"
       href="#"
@@ -214,13 +214,6 @@ onUnmounted(() => {
   background: white;
 }
 
-.phone::after {
-  width: 100%;
-}
-
-.phone:hover::after {
-  width: 0;
-}
 
 .vibrate-button {
   border: 2px solid rgba(244, 246, 252, 0.2);
