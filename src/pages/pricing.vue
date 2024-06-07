@@ -19,8 +19,8 @@
         class="py-[64px] px-[48px] rounded-3xl relative overflow-hidden"
       >
         <div
-            v-if="index == 1"
-            class="z-10 w-[1000px] h-[1000px] rounded-full absolute top-[10%] md:top-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-[6%]"
+          v-if="index == 1"
+          class="z-10 w-[1000px] h-[1000px] rounded-full absolute top-[10%] md:top-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-[6%]"
         ></div>
 
         <div class="flex items-center gap-2 mb-5">
@@ -227,7 +227,7 @@ const arr2 = reactive([
 ]);
 
 function toggleFAQ(index) {
-  this.arr2[index].open = !this.arr2[index].open;
+  arr2[index].open = !arr2[index].open;
 }
 </script>
 

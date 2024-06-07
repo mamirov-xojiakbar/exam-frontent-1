@@ -52,7 +52,7 @@
         Meet our team
       </h2>
 
-      <div class="md:flex mt-12 w-full justify-between md:gap-[32px]">
+      <div class="md:grid grid-cols-4 mt-12 w-full justify-between md:gap-[32px]">
         <div class="py-12 px-3 md:px-16 group bg-white mb-5 md:mb-0" v-for="(item, index) in images" :key="index">
           <div class="relative overflow-hidden rounded-full max-md:flex max-md:justify-center">
             <img class="rounded-full max-md:w-full" :src="item" alt="" />

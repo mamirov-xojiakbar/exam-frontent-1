@@ -89,7 +89,7 @@ onUnmounted(() => {
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
-          class="hidden md:block font-medium text-[16px] text-navbar_text [&.router-link-active]:text-white"
+          class="hidden md:block font-medium text-[16px] text-navbar_text [&.router-link-active]:text-white hover:text-white"
           v-for="(item, index) in menu"
           :key="index"
           >{{ item }}</router-link>

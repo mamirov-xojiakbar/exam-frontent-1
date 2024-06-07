@@ -3,10 +3,10 @@
   <header class="bg-tint_blue pt-[110px] md:pt-[200px] md:pb-[128px] pb-[70px]">
     <div class="container md:flex md:gap-[60px] px-5 md:px-0">
       <div class="text-white md:pr-[40px]">
-        <h1 class="font-semibold md:text-[54px] text-[30px] md:leading-[74px]">
+        <h1 class="font-semibold md:text-[54px] text-[30px] md:leading-[74px] text-center md:text-start">
           Building stellar websites for early startups
         </h1>
-        <p class="font-medium text-[16px] leading-[28px] mt-[24px]">
+        <p class="font-medium text-[16px] leading-[28px] mt-[24px] text-center md:text-start">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
@@ -69,7 +69,7 @@
         <div class="overflow-hidden group relative md:col-span-2 md:mb-[64px]">
           <img src="../../public/Card.png" alt="" class="w-full h-full"/>
           <div
-            class="w-[47%] absolute -left-full group-hover:left-0 duration-500 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end pb-5 md:pb-20"
+            class="md:w-[47%] w-full absolute -left-full group-hover:left-0 duration-500 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end pb-5 md:pb-20"
           >
             <div class="">
               <h2 class="md:text-[26px] text-[15px] font-medium md:font-bold md:leading-[36px] text-white mx-5 md:mx-11">
@@ -190,18 +190,80 @@
   <!-- end features -->
 
   <!-- start clients -->
-  <div class="bg-[#F4F6FC]"> 
-      <div class="container md:flex px-5 md:px-0"> 
-        <div class="md:w-1/4"> 
-          <h2 class="md:leading-[56px] text-center text-[22px] md:text-[40px] text-[#282938] font-semibold md:text-start"> 
-            What our clients say about us 
-          </h2> 
-          <p class="md:leading-[28px] text-[#282938] mt-4 md:pt-6 text-center md:text-start mb-10"> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed. 
-          </p> 
-        </div> 
-        <ClientsComment /> 
-      </div> 
+  <div class="temp flex justify-center">
+    <div
+      class="container max-md:px-[5%] md:grid md:grid-cols-3 gap-[10%] md:mt-[57px] md:py-[128px] py-[64px]"
+    >
+      <div class="md:col-span-1 col-span-2">
+        <h3
+          class="md:text-[38px] text-2xl max-md:px-8 md:text-start text-center font-semibold leading-[56px]"
+          style="color: rgba(40, 41, 56, 1)"
+        >
+          What our clients say about us
+        </h3>
+        <p
+          class="md:mt-4 max-md:text-[14px] mt-8"
+          style="color: rgba(40, 41, 56, 1)"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+        </p>
+      </div>
+      <div class="col-span-2 max-md:mt-8">
+        <div class="swiper-container overflow-hidden relative">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              v-for="(testimonial, index) in testimonials"
+              :key="index"
+            >
+              <h5
+                class="md:text-[32px] text-[17px] font-medium md:leading-[48px] leading-[30px]"
+                style="color: rgba(40, 41, 56, 1)"
+              >
+                "{{ testimonial.text }}"
+              </h5>
+              <div class="mt-12 w-full justify-between flex">
+                <div class="flex gap-[14px]">
+                  <img :src="testimonial.img" alt="testimonial.name" class="w-[52px] h-[52px] rounded-[50%]"/>
+                  <div
+                    class="flex flex-col justify-start items-center gap-2 max-md:-1"
+                  >
+                    <h6
+                      class="text-[14px] md:text-[18px]"
+                      style="color: rgba(40, 41, 56, 1)"
+                    >
+                      {{ testimonial.name }}
+                    </h6>
+                    <p
+                      class="text-[10px] md:text-[12px]"
+                      style="color: rgba(40, 41, 56, 1)"
+                    >
+                      {{ testimonial.position }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-[10px] absolute bottom-0 right-0 z-10"
+          >
+            <button
+              @click="goToPrevSlide"
+              class="text-[#282938] md:w-[48px] md:h-[48px] h-[34px] w-[34px] flex items-center justify-center rounded-full hover:bg-[#5239FA] hover:text-white text-xl md:text-4xl"
+            >
+              &lt;
+            </button>
+            <button
+              @click="goToNextSlide"
+              class="md:w-[48px] md:h-[48px] h-[34px] w-[34px] flex items-center justify-center rounded-full text-xl md:text-4xl hover:bg-[#5239FA] hover:text-white"
+            >
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- end clients -->
 
@@ -212,7 +274,10 @@ import { reactive } from "vue";
 import icon from "../../public/Icon.png";
 import icon2 from "../../public/Icon2.png";
 import icon3 from "../../public/Icon3.png";
-import ClientsComment from "../components/clients-comment.vue";
+import { onMounted, ref } from "vue";
+import Swiper from "swiper/bundle";
+import "swiper/swiper-bundle.css";
+const swiper = ref(null);
 
 const column = reactive([
   {
@@ -248,6 +313,43 @@ const column = reactive([
 ]);
 
 
+const goToPrevSlide = () => {
+  swiper.value.slidePrev();
+};
+
+const goToNextSlide = () => {
+  swiper.value.slideNext();
+};
+
+onMounted(() => {
+  swiper.value = new Swiper(".swiper-container", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+});
+
+const testimonials = ref([
+  {
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features focus.",
+    img: "/abdulloh2.png",
+    name: "Jenny Wilson",
+    position: "Vice President",
+  },
+  {
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features focus.",
+    img: "/about-user3.png",
+    name: "John Doe",
+    position: "CEO",
+  },
+  {
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features focus.",
+    img: "/about-user2.png",
+    name: "Sarah Smith",
+    position: "Marketing Director",
+  },
+]);
 </script>
 
 <style lang="scss" scoped></style>
