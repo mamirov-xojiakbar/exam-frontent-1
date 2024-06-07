@@ -1,7 +1,7 @@
 <template>
   <header class="">
     <div
-      class="md:pb-[126px] pb-[60px] md:pt-[220px] pt-[150px] md:flex container md:justify-between items-center px-5 md:px-0"
+      class="md:pb-[126px] pb-[60px] md:pt-[220px] pt-[120px] md:flex container md:justify-between items-center px-5 md:px-0"
     >
       <div class="md:w-[38%]">
         <p class="font-normal text-[18px] leading-[32px] mb-2">About us</p>
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="bg-backg container pt-[95px] mb-[128px] px-5 md:px-0">
+    <div class="bg-backg container pt-[50px] md:pt-[95px] mb-[128px] px-5 md:px-0">
       <div class="md:flex md:mx-[90px] md:mb-[95px] mb-[40px] gap-[61px]">
         <div>
           <p class="font-semibold text-[25px] md:text-[38px] leading-[56px] font-[Poppins]">Goal focussed</p>
@@ -52,8 +52,8 @@
         Meet our team
       </h2>
 
-      <div class="md:flex mt-12 w-full justify-between">
-        <div class="py-12 md:px-16 group" v-for="(item, index) in images" :key="index">
+      <div class="md:flex mt-12 w-full justify-between md:gap-[32px]">
+        <div class="py-12 px-3 md:px-16 group bg-white mb-5 md:mb-0" v-for="(item, index) in images" :key="index">
           <div class="relative overflow-hidden rounded-full max-md:flex max-md:justify-center">
             <img class="rounded-full max-md:w-full" :src="item" alt="" />
             <img

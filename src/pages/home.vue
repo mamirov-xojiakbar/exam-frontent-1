@@ -1,6 +1,6 @@
 <template>
   <!-- start header -->
-  <header class="bg-tint_blue pt-[150px] md:pt-[200px] pb-[128px]">
+  <header class="bg-tint_blue pt-[110px] md:pt-[200px] md:pb-[128px] pb-[70px]">
     <div class="container md:flex md:gap-[60px] px-5 md:px-0">
       <div class="text-white md:pr-[40px]">
         <h1 class="font-semibold md:text-[54px] text-[30px] md:leading-[74px]">
@@ -48,7 +48,7 @@
         <h2 class="text-our_project text-[17px] md:text-[48px] font-semibold">
           View our projects
         </h2>
-        <button class="flex items-center text-our_project">
+        <router-link to="/pricing" class="flex items-center text-our_project">
           <span class="mr-2">View pricing</span>
           <svg
             width="25"
@@ -62,27 +62,27 @@
               fill="#282938"
             />
           </svg>
-        </button>
+        </router-link>
       </div>
 
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-4 pt-10 mb-[100px]">
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-4 pt-10 mb-[60px] md:mb-[100px]">
         <div class="overflow-hidden group relative md:col-span-2 md:mb-[64px]">
           <img src="../../public/Card.png" alt="" class="w-full h-full"/>
           <div
-            class="w-[47%] absolute -left-full group-hover:left-0 duration-500 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end pb-20"
+            class="w-[47%] absolute -left-full group-hover:left-0 duration-500 top-0 h-[100%] bg-our_hover z-10 flex flex-col justify-end pb-5 md:pb-20"
           >
             <div class="">
-              <h2 class="md:text-[26px] text-[17px] font-medium md:font-bold md:leading-[36px] text-white mx-11">
+              <h2 class="md:text-[26px] text-[15px] font-medium md:font-bold md:leading-[36px] text-white mx-5 md:mx-11">
                 Workhub office Webflow Webflow Design
               </h2>
               <p
-                class="md:text-[18px] md:font-bold ms:leading-[28px] mt-5 text-white mx-11 text-[12px]"
+                class="opacity-[80%] md:text-[18px] md:font-bold ms:leading-[28px] mt-2 md:mt-5 text-white mx-5 md:mx-11 text-[12px]"
               >
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
               </p>
               <button
-                class="text-[#FCD980] mx-11 mt-10 flex gap-2 items-center"
+                class="text-[#FCD980] mx-5 mt-4 md:mx-11 md:mt-10 flex gap-2 items-center text-[13px] md:text-[20px]"
               >
                 <span>View project</span>
                 <svg
@@ -162,7 +162,7 @@
 
   <!-- start features -->
   <section class="bg-features">
-    <div class="container pt-[128px] pb-[128px] px-5 md:px-0">
+    <div class="container pt-[70px] md:pt-[128px] pb-[70px] md:pb-[128px] px-5 md:px-0">
       <p class="text-center font-medium text-[16px] leading-[28px]">Features</p>
       <div class="w-full flex justify-center mt-[12px]">
         <p
@@ -193,10 +193,10 @@
   <div class="bg-[#F4F6FC]"> 
       <div class="container md:flex px-5 md:px-0"> 
         <div class="md:w-1/4"> 
-          <h2 class="leading-[56px] text-center text-[30px] md:text-[40px] text-[#282938] font-semibold md:text-start"> 
+          <h2 class="md:leading-[56px] text-center text-[22px] md:text-[40px] text-[#282938] font-semibold md:text-start"> 
             What our clients say about us 
           </h2> 
-          <p class="leading-[28px] text-[#282938] md:pt-6 text-center md:text-start mb-10"> 
+          <p class="md:leading-[28px] text-[#282938] mt-4 md:pt-6 text-center md:text-start mb-10"> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed. 
           </p> 
         </div> 

@@ -1,8 +1,8 @@
 <template>
   <div class="bg-tint_blue">
-    <div class="container  pb-[92px] px-5 md:px-0">
+    <div class="container pb-[60px] md:pb-[92px] px-5 md:px-0">
         <div  class="md:flex text-white md:gap-[260px]">
-          <div class="md:w-[30%] md:mt-[104px] pt-[104px] md:pt-0">
+          <div class="md:w-[30%] md:mt-[104px] pt-[60px] md:pt-0">
               <img src="../../public/Logo.png" alt="" />
               <p class="mt-[24px] font-medium text-[16px] leading-[28px]">
               We are always open to discuss your project and improve your online

@@ -1,11 +1,11 @@
 <template>
   <!-- start Our Pricing Plans -->
-  <section class="container pt-[200px] px-5 md:px-0">
+  <section class="container pt-[120px] md:pt-[200px] px-5 md:px-0">
     <div class="w-full text-center md:px-[380px]">
-      <p class="text-[Poppins] font-semibold text-[48px] leading-[64px] mb-4">
+      <p class="text-[Poppins] font-semibold text-[30px] md:text-[48px] md:leading-[64px] mb-4">
         Our Pricing Plans
       </p>
-      <p class="opacity-[70%] font-medium text-[16px] leading-[28px]">
+      <p class="opacity-[70%] font-medium text-[16px] md:leading-[28px]">
         When you’re ready to go beyond prototyping in Figma, Webflow is ready to
         help you bring your designs to life — without coding them.
       </p>
@@ -16,8 +16,13 @@
         v-for="(item, index) in arr"
         :key="index"
         :class="item.id == 2 ? 'bg-tint_blue text-white' : 'bg-features'"
-        class="py-[64px] px-[48px] rounded-3xl"
+        class="py-[64px] px-[48px] rounded-3xl relative overflow-hidden"
       >
+        <div
+            v-if="index == 1"
+            class="z-10 w-[1000px] h-[1000px] rounded-full absolute top-[10%] md:top-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-[6%]"
+        ></div>
+
         <div class="flex items-center gap-2 mb-5">
           <p class="font-[Poppins] font-semibold text-[38px] leading-[56px]">
             {{ item.price }}
@@ -91,8 +96,8 @@
           v-for="(item, index) in arr2"
           :key="index"
         >
-          <div
-            class="flex justify-between items-center cursor-pointer font-[Poppins] font-normal md:text-[20px]"
+          <button
+            class="w-full text-left flex justify-between items-center cursor-pointer font-[Poppins] font-normal md:text-[20px]"
             @click="toggleFAQ(index)"
           >
             <div class="text-[#2405F2] font-bold">0{{ index + 1 }}</div>
@@ -126,7 +131,7 @@
                 </svg>
               </template>
             </div>
-          </div>
+          </button>
 
           <div
             class="mt-4 faq-item"

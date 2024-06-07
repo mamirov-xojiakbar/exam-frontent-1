@@ -1,6 +1,6 @@
 <template>
   <div class="md:w-3/4 md:pl-[120px] pr-3 ">
-    <h2 class="md:leading-[48px] text-[17px] md:text-[36px] text-[#282938] font-medium">
+    <h2 class="md:leading-[48px] text-[15px] md:text-[36px] text-[#282938] font-medium">
       {{ clientsComment[id].text }}
     </h2>
 
