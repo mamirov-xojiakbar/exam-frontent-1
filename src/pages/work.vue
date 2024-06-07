@@ -1,6 +1,6 @@
 <template>
   <section class=" bg-[#F4F6FC] px-5 md:px-0">
-    <div class="pt-[150px] text-center container pb-[96px]">
+    <div class="pt-[120px] md:pt-[150px] text-center container pb-[60px] md:pb-[96px]">
         <p class="font-medium text-[16px] leading-[28px] opacity-[70%] font-[Poppins]">What we created</p>
         <p class="font-semibold text-[20px] md:text-[48px] leading-[64px] font-[Poppins]">Our Work Portfolio</p>
         <div class="w-full flex justify-center">
@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section class="container pt-[96px] pb-[128px] px-5 md:px-0">
+  <section class="container pt-[50px] md:pt-[96px] pb-[60px] md:pb-[128px] px-5 md:px-0">
     <div class="flex flex-wrap w-full justify-center gap-[20px] md:gap-[32px] mb-[48px]">
         <router-link to="/all" class="[&.router-link-active]:text-[#2405F2] font-normal text-[18px] leading-[32px] font-[Poppins]">All</router-link>
         <router-link to="/ui" class="[&.router-link-active]:text-[#2405F2] font-normal text-[18px] leading-[32px] font-[Poppins]">UI Design</router-link>

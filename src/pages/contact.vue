@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-[170px] mb-[64px] px-5 md:px-0">
+  <div class="pt-[100px] md:pt-[170px] mb-[64px] px-5 md:px-0">
     <p
       class="font-[Poppins] font-semibold text-[20px] md:text-[48px] leading-[64px] mb-[16px] text-center"
     >
@@ -16,8 +16,8 @@
     </div>
   </div>
 
-  <div class="flex justify-center mb-[128px]">
-    <div class="bg-[#F4F6FC] rounded-lg pt-[55px] px-5 md:px-[77px] md:w-[80%]">
+  <div class="flex justify-center mb-[128px] px-5 md:px-0">
+    <form class="bg-[#F4F6FC] rounded-lg pt-[55px] px-5 md:px-[77px] md:w-[80%]">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-[32px] mb-4">
         <div>
           <label
@@ -100,7 +100,7 @@
       >
         Send Message
       </button>
-    </div>
+    </form>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="container pt-[190px] text-center pb-[128px] px-5 md:px-0">
+  <section class="container pt-[130px] md:pt-[190px] text-center pb-[60px] md:pb-[128px] px-5 md:px-0">
     <div class="w-full flex justify-center mb-[16px]">
         <p class="font-[Poppins] font-semibold md:text-[48px] md:leading-[64px] w-[70%]">
             A UX Case Study on Creating a Studious Environment for Students
@@ -26,7 +26,7 @@
     </a>
   </section>
 
-  <section class="container pb-[128px] px-5 md:px-0">
+  <section class="container pb-[40px] md:pb-[128px] px-5 md:px-0">
     <p class="font-[Poppins] font-semibold text-center text-[30px] md:text-[48px] leading-[64px] mb-[48px]">
         Our Blog
     </p>

@@ -79,7 +79,7 @@
 
   <!-- start Frequently -->
   <section class="container px-5 md:px-0">
-    <div class="md:flex mb-[128px]">
+    <div class="md:flex mb-[70px] md:mb-[128px]">
       <div class="md:w-[35%] mb-10 md:mb-0">
         <p
           class="font-[Poppins] font-semibold text-[30px] md:text-[40px] md:leading-[64px] mb-4"
