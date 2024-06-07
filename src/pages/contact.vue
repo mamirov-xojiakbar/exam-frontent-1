@@ -26,6 +26,7 @@
             >Name</label
           >
           <input
+          required
             type="text"
             id="name"
             class="mt-1 px-[32px] py-[18px] w-full border rounded-md bg-[#F4F6FC] border-[#0000001F] focus:outline-none font-[Poppins] font-normal text-[16px] leading-[28px]"
@@ -35,6 +36,7 @@
 
         <div>
           <label
+          required
             for="email"
             class="font-[Poppins] font-normal text-[18px] leading-[32px]"
             >Email</label
@@ -56,6 +58,7 @@
             >Subject</label
           >
           <input
+          required
             type="text"
             id="subject"
             class="mt-1 px-[32px] py-[18px] w-full border rounded-md bg-[#F4F6FC] border-[#0000001F] focus:outline-none font-[Poppins] font-normal text-[16px] leading-[28px]"
@@ -70,6 +73,7 @@
             >Subject</label
           >
           <select
+          required
             id="subject-select"
             class="mt-1 px-[32px] opacity-[70%] py-[18px] w-full border rounded-md bg-[#F4F6FC] border-[#0000001F] focus:outline-none font-[Poppins] font-normal text-[16px] leading-[28px]"
           >
@@ -88,6 +92,7 @@
           >Message</label
         >
         <textarea
+        required
           id="message"
           class="mt-1 py-[18px] px-[32px] w-full border border-[#0000001F] rounded-md h-32 resize-none bg-[#F4F6FC] focus:outline-none"
           placeholder="Write your question here"
