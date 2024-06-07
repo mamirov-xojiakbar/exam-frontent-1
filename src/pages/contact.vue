@@ -17,7 +17,7 @@
   </div>
 
   <div class="flex justify-center mb-[128px] px-5 md:px-0">
-    <form class="bg-[#F4F6FC] rounded-lg pt-[55px] px-5 md:px-[77px] md:w-[80%]">
+    <form class="bg-[#F4F6FC] rounded-lg pt-[55px] px-5 md:px-[77px] md:w-[1000px]">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-[32px] mb-4">
         <div>
           <label
