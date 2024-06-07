@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="bg-backg container pt-[50px] md:pt-[95px] mb-[128px] px-5 md:px-0">
+    <div class="bg-backg container pt-[50px] md:pt-[95px] mb-[70px] md:mb-[128px] px-5 md:px-0">
       <div class="md:flex md:mx-[90px] md:mb-[95px] mb-[40px] gap-[61px]">
         <div>
           <p class="font-semibold text-[25px] md:text-[38px] leading-[56px] font-[Poppins]">Goal focussed</p>
@@ -46,7 +46,7 @@
     </div>
   </header>
 
-  <div class="flex justify-center bg-features">
+  <div class="flex justify-center bg-features pt-[50px] md:pt-0">
     <div class="container max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue">
       <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-8">
         Meet our team

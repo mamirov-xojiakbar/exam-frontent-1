@@ -65,8 +65,8 @@
             class="font-semibold text-[18px] leading-[32px] py-4 px-[50px] md:px-[77px] rounded-[41px]"
             :class="
               item.id == 2
-                ? 'bg-[#FCD980] text-black'
-                : 'bg-[#282938] text-white'
+                ? 'bg-[#FCD980] text-black hover:bg-white'
+                : 'bg-[#282938] text-white hover:bg-[#FCD980] hover:text-black'
             "
           >
             {{ item.button }}

@@ -16,8 +16,8 @@
     </div>
   </div>
 
-  <div class="flex justify-center mb-[128px] px-5 md:px-0">
-    <form class="bg-[#F4F6FC] rounded-lg pt-[55px] px-5 md:px-[77px] md:w-[1000px]">
+  <div class="flex justify-center mb-[50px] md:mb-[128px] px-5 md:px-0">
+    <form class="bg-[#F4F6FC] rounded-lg pt-[20px] md:pt-[55px] px-5 md:px-[77px] md:w-[1000px]">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-[32px] mb-4">
         <div>
           <label
@@ -101,7 +101,7 @@
 
       <button
         type="submit"
-        class="bg-[#282938] w-full md:w-[30%] text-white font-semibold text-[18px] leading-[32px] py-[16px] px-[64px] rounded-[41px] mb-[69px]"
+        class="bg-[#282938] w-full md:w-[30%] text-white font-semibold text-[18px] leading-[32px] py-[16px] px-[64px] rounded-[41px] mb-[30px] md:mb-[69px]"
       >
         Send Message
       </button>
